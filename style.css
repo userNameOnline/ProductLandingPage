@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba(0, 0, 0, .1);
+}
+
+/*----- nav bar -----*/
+
+#header-img {
+  position: relative;
+  left: 25px;
+  height: 150%;
+  width: 150px;
+  bottom: 20px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+}
+
+#list {
+  display: inline;
+  float: right;
+  margin-right: 25px;
+}
+
+.list-item {
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: 'Fredoka One', cursive;
+  padding: 10px;
+  color: rgba(255, 255, 255);
+  background: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 625px) {
+  #header-img {
+    margin: 0 auto;
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #list {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+  }
+  
+  .list-item {
+
+  }
+}
+/*---- main styles ----- */
+#main {
+  background: url(https://i.imgur.com/gZOnoyr.jpg);
+  height: 750px;
+  background-size: cover;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+#front-page {
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+}
+
+#main-wrapper {
+  position: relative;
+  bottom: 50px;
+}
+
+/*---- video section -----*/
+#vid-container {
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+
+#video {
+  padding: 20px;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 670px) {
+  #video {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/*----- about ----- */
+#about-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  position: relative;
+  padding: 50px;
+}
+
+.about-img {
+  height: 100px;
+  text-align: center;
+
+}
+
+.flex-box {
+  padding: 30px;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1140px) {
+  #about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    padding: 50px;
+  }
+  
+  .flex-box {
+    padding: 30px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 50%;
+}
+}
+
+/*----- email container ------*/
+#email-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+#email-txt {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+#email {
+  padding: 5px;
+}
+
+#submit {
+  padding: 5px;
+  font-family: 'Fredoka One', cursive;
+  color: black;
+  border: none;
+  background: rgba(0, 0, 0, .2);
+}
+
+/*---- footer ---- */
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, .1);
+  padding: 10px;
+  font-family: 'Fredoka One', cursive;
+}
