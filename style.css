@@ -104,7 +104,7 @@ body {
 /*---- video section -----*/
 #vid-container {
   text-align: center;
-  padding: 50px;
+  padding: 100px;
   position: relative;
 }
 
@@ -128,7 +128,7 @@ body {
   text-align: center;
   font-family: 'Fredoka One', cursive;
   position: relative;
-  padding: 50px;
+  padding: 100px;
 }
 
 .about-img {
