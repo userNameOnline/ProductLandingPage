@@ -49,34 +49,46 @@ body {
 
 @media only screen and (max-width: 500px) {
   #logo {
-    height: 150px;
-    width: 150px;
+    position: relative;
     left: 0;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    margin: 0 auto;
   }
   
   #nav-bar {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: auto;
-    text-align: center;
-    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
   }
   
   #list {
     display: flex;
-    margin: 0;
-    float: none;
     justify-content: space-evenly;
-  }
-
-  .list-item {
-    font-size: 16px;
+    float: none;
     margin: 0;
-    display: block;
+  }
+  
+  .list-item {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
   }
 
   .nav-link {
-    
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    padding: 10px;
+    color: rgba(255, 255, 255);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
   }
+
 }
 /*---- main styles ----- */
 #main {
