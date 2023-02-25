@@ -75,7 +75,7 @@ body {
 }
 /*---- main styles ----- */
 #main {
-  background: url('/pics/Background.jpg');
+  background: url('pics/Background.jpg');
   height: 800px;
   background-size: cover;
   z-index: 1;
